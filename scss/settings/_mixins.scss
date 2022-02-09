@@ -1,0 +1,8 @@
+@mixin boxSections($color) {
+  display: flex;
+  flex-direction: column;
+  background-color: $color;
+  margin: 1rem;
+  padding: 1.3rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 0;
+}

@@ -1,0 +1,24 @@
+.mockup_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 1.8rem 1rem 1.8rem;
+  transform: translateY(-5rem);
+  .mockup--text {
+    flex: 1;
+    text-align: end;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $dark-blue;
+    span {
+      padding: 0.2rem 0.5rem;
+      background-color: $very-light-blue;
+      border-radius: 1.5rem 1rem 1rem 0;
+    }
+  }
+  .mockup--img {
+    flex: 1;
+    width: 100%;
+    max-width: 27rem;
+    margin-left: 0.5rem;
+  }
+}

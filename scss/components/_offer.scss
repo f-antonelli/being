@@ -1,0 +1,17 @@
+.offer__wrapper {
+  @include boxSections($very-light-green);
+  .offer__textbox {
+    padding: 1rem 0;
+    color: $dark-blue;
+    .offer--title {
+      padding-bottom: 1rem;
+    }
+    .offer--text {
+      line-height: 1.5rem;
+      padding-bottom: 1rem;
+      span{
+         font-weight: bold;
+      }
+    }
+  }
+}
