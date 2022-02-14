@@ -1,3 +1,9 @@
+.new--box {
+  @media screen and (max-width: 599px){
+    display: block;
+    height: 55rem;
+  }
+}
 .offer__wrapper {
   @include boxSections($very-light-green);
   .offer__textbox {

@@ -1,8 +1,11 @@
 .mockup_wrapper {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 599px){
+    position: relative;
+    top: -5rem;
+  }
   margin: 0 1.8rem 1rem 1.8rem;
-  transform: translateY(-5rem);
   .mockup--text {
     flex: 1;
     text-align: end;
