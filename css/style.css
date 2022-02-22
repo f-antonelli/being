@@ -3,12 +3,17 @@
   .wrapper-navmobile {
     display: none !important; }
   .wrapper-navdesktop {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex !important;
     justify-content: space-between;
     align-items: center;
     background-color: #EFF0E1;
     height: 3.5rem;
-    padding: 0 3rem; }
+    padding: 0 3rem;
+    width: 100vw; }
     .wrapper-navdesktop .nav__logo {
       cursor: pointer;
       width: 7rem;
@@ -33,6 +38,22 @@
         font-weight: 500;
         text-decoration: none;
         color: #325D79; }
+  .wrapper__herodesktop .container-herobox {
+    flex-direction: row !important;
+    margin: 0 2rem; }
+    .wrapper__herodesktop .container-herobox .main-content {
+      text-align: start !important;
+      justify-content: start !important;
+      flex: 0.8; }
+      .wrapper__herodesktop .container-herobox .main-content p {
+        width: 21rem !important;
+        padding: 0 !important; }
+      .wrapper__herodesktop .container-herobox .main-content .input-main {
+        justify-content: start !important; }
+    .wrapper__herodesktop .container-herobox .swiper-container {
+      width: 20rem !important; } }
+
+@media (min-width: 500px) {
   .wrapper__heromobile {
     display: none !important; }
   .wrapper__herodesktop {
@@ -40,27 +61,33 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    margin: auto; }
+    margin: auto;
+    height: 100vh; }
     .wrapper__herodesktop .container-herobox {
       display: flex;
       align-items: center;
+      flex-direction: column;
       height: 70vh;
-      width: 90%;
+      width: 100%;
       color: #325D79;
       max-width: 1400px; }
       .wrapper__herodesktop .container-herobox .main-content {
-        flex: .8; }
+        text-align: center;
+        justify-content: center;
+        flex: 0.5; }
         .wrapper__herodesktop .container-herobox .main-content h1 {
           text-transform: uppercase;
           margin-bottom: 1rem;
           font-size: 1.8rem; }
         .wrapper__herodesktop .container-herobox .main-content p {
-          width: 21rem;
+          width: 100%;
+          padding: 0 1rem;
           margin-bottom: 1.5rem;
           font-size: 1.1rem;
           font-weight: 500; }
         .wrapper__herodesktop .container-herobox .main-content .input-main {
-          display: flex; }
+          display: flex;
+          justify-content: center; }
           .wrapper__herodesktop .container-herobox .main-content .input-main input {
             outline: none;
             border: none;
@@ -81,7 +108,7 @@
         flex: 1;
         display: flex;
         justify-content: center;
-        width: 20rem;
+        width: 90%;
         height: 25rem;
         max-width: 750px; }
         .wrapper__herodesktop .container-herobox .swiper-container .swiper-slide img {
