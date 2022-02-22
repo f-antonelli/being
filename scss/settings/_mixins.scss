@@ -7,12 +7,11 @@
   border-radius: 1.2rem 1.2rem 1.2rem 0;
 }
 
-@mixin boxSections__desktop($color) {
+@mixin boxSectionsDesktop($color) {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   background-color: $color;
-  margin: 2rem 6rem 2rem 6rem;
+  margin: 2rem 4rem;
   padding: 1.3rem;
   border-radius: 1.2rem 1.2rem 1.2rem 0;
 }

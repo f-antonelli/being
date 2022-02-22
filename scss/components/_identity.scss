@@ -1,52 +1,94 @@
 .identity__wrapper {
-@include boxSections($very-light-blue);
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-  @media screen and (max-width: 1199px) {
-    .identity__textbox {
-      padding: 1rem 0;
-      color: $dark-blue;
-      .identity--title {
-        padding-bottom: 1rem;
-      }
-      .identity--text {
-        line-height: 1.5rem;
-        padding-bottom: 1rem;
-      }
+  @include boxSections($very-light-blue);
+  justify-content: center;
+  .identity__textbox {
+    padding: 1rem 0;
+    color: $dark-blue;
+    .identity--title {
+      padding-bottom: 1rem;
     }
-    .identity__imgbox {
-      img {
-        border-radius: 1.2rem 1.2rem 1.2rem 0;
-        width: 100%;
-        height: 100%;
-      }
+    .identity--text {
+      line-height: 1.5rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .identity__imgbox {
+    display: flex;
+    justify-content: center;
+    img {
+      border-radius: 1.2rem 1.2rem 1.2rem 0;
+      width: 100%;
+      height: 100%;
+      max-width: 460px;
     }
   }
 }
 
-.identity__wrapper__desktop {
-  @media screen and (max-width: 1199px) {
+.wrapper-identity-desktop {
+  display: none;
+}
+
+@media (min-width: 985px) {
+  .identity__wrapper {
     display: none;
   }
-  @media screen and (min-width: 1200px){
-    @include boxSections__desktop($very-light-blue);
-    .identity__textbox {
-      padding: 2.5rem 3rem 2.5rem 3rem;
-      color: $dark-blue;
-      .identity--title {
-        padding-bottom: 1rem;
+  .wrapper-identity-desktop {
+    display: flex !important;
+    flex-direction: column;
+    margin: auto;
+    .container-wearebeing {
+      @include boxSectionsDesktop($very-light-blue);
+      .identity__imgbox {
+        flex: 0.8;
+        max-height: 13rem;
+        max-width: 450px;
+        img {
+          border-radius: 1.2rem 1.2rem 1.2rem 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
-      .identity--text {
-        line-height: 1.5rem;
-        padding-bottom: 1rem;
+      .identity-content {
+        flex: 1;
+        color: $dark-blue;
+        padding: 2rem 4rem;
+        .identity-title {
+          padding-bottom: 1rem;
+          .identity-text {
+            padding: 2.5rem 3rem 2.5rem 3rem;
+            line-height: 1.5rem;
+            padding-bottom: 1rem;
+          }
+        }
       }
     }
-    .identity__imgbox {
-      img {
-        border-radius: 1.2rem 1.2rem 1.2rem 0;
-        width: 100%;
-        height: 100%;
+
+    .container-ourplatform {
+      @include boxSectionsDesktop($very-light-green);
+      .identity__imgbox {
+        flex: 0.8;
+        max-height: 13rem;
+        max-width: 450px;
+        img {
+          border-radius: 1.2rem 1.2rem 1.2rem 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .identity-content {
+        flex: 1;
+        color: $dark-blue;
+        padding: 2rem 4rem;
+        .identity-title {
+          padding-bottom: 1rem;
+          .identity-text {
+            padding: 2.5rem 3rem 2.5rem 3rem;
+            line-height: 1.5rem;
+            padding-bottom: 1rem;
+          }
+        }
       }
     }
   }
