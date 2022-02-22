@@ -4,6 +4,8 @@
 @import "./settings/colors";
 // mixins
 @import "./settings/mixins";
+//  responsive
+@import './responsive/mediaQueries';
 // components
 @import "./components/nav";
 @import "./components/section1";

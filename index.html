@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!--Swipper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>Being</title>
   </head>
   <body>
@@ -34,13 +39,15 @@
           <li><a href="./pages/comunidad.html">Comunidad</a></li>
           <li><a href="./pages/plataforma.html">Plataforma</a></li>
           <li><a href="./pages/contacto.html">Contacto</a></li>
-          <li><a href="./pages/iniciate.html" class="a--getstarted">Iniciate</a></li>
+          <li>
+            <a href="./pages/iniciate.html" class="a--getstarted">Iniciate</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <!--Main section-->
-    <section class="section1__wrapper">
+    <!--Main section | Mobile-->
+    <section class="wrapper__heromobile">
       <div class="hero__img"></div>
       <div class="hero__content">
         <p class="hero__text">
@@ -50,7 +57,38 @@
       </div>
     </section>
 
-    <!--Identity section-->
+    <!--Main section | Mobile-->
+    <section class="wrapper__herodesktop">
+      <div class="container-herobox">
+        <div class="main-content">
+          <h1>ALCANZA EL ÉXITO</h1>
+          <p>
+            Clases interactivas de inglés, adaptadas específicamente a tus
+            necesidades.
+          </p>
+          <div class="input-main">
+            <input type="text" name="bar" placeholder="Escribe tu mail" />
+            <button>INICIATE</button>
+          </div>
+        </div>
+        <div class="swiper-container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/carousel-1.jpg" alt="carousel-1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/carousel-2.jpg" alt="carousel-2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/carousel-3.jpg" alt="carousel-3" />
+            </div>
+          </div>
+          <div class="carousel-buttons swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--Identity section | Mobile -->
     <section class="identity__wrapper">
       <div class="identity__textbox">
         <h2 class="identity--title">Identidad</h2>
@@ -71,6 +109,8 @@
         />
       </div>
     </section>
+
+    <!--Identity section | Desktop -->
     <section class="identity__wrapper__desktop">
       <div class="identity__textbox">
         <h2 class="identity--title">Somos Being</h2>
@@ -331,5 +371,17 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
