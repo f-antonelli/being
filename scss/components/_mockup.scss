@@ -1,17 +1,14 @@
-.mockup_wrapper {
-  @media screen and (min-width: 1200px) {
-    display: none
-  }
-  @media screen and (max-width: 1199px) {
+.mockup__wrapperdesktop {
+  position: relative;
+  top: -4.5rem;
   display: flex;
   align-items: center;
-  position: relative;
-  top: -5rem;
-  margin: 0 1.8rem 1rem 1.8rem;
+  margin: 0 auto;
+  width: 80%;
   .mockup--text {
     flex: 1;
     text-align: end;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: $dark-blue;
     span {
@@ -20,50 +17,30 @@
       border-radius: 1.5rem 1rem 1rem 0;
     }
   }
-  .container-mockup{
-    flex: 1;  
+  .container-mockup {
+    flex: 1;
     width: 100%;
     height: auto;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-  }
+    padding-left: 1rem;
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 295px;
+    }
   }
 }
 
-.mockup_wrapper__desktop {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
-  @media screen and (min-width: 1199px) {
-  display: flex;
-  align-items: center;
-  position: relative;
-  top: -7rem;
-  margin: 0 1.8rem 1rem 1.8rem;
-  padding: 0rem 23rem 0rem 23rem;
-  .mockup--text {
-    flex: 1;
-    text-align: end;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: $dark-blue;
-    span {
-      padding: 0.2rem 0.5rem;
-      background-color: $very-light-blue;
-      border-radius: 1.5rem 1rem 1rem 0;
+@media (min-width: 540px) {
+  .mockup__wrapperdesktop {
+    width: 60%;
+    .mockup--text {
+      font-size: 1.6rem;
     }
   }
-  .container-mockup{
-    flex: 1;  
-    width: 100%;
-    height: auto;
-    padding: 0rem 0rem 0rem 2rem;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-  }
+}
+
+@media (min-width: 1000px) {
+  .mockup__wrapperdesktop {
+    top: -7rem;
   }
 }

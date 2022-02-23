@@ -1,23 +1,5 @@
-.new--box {
-  @media screen and (max-width: 1199px){
-    display: block;
-    height: 55rem
-  }
-}
-
-.new--box--desktop {
-  @media screen and (min-width: 1200px){
-    display: block;
-    height: 50rem
-  }
-}
-
 .offer__wrapper {
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-  @media screen and (max-width: 1199px){
-    @include boxSections($very-light-green);
+  @include boxSections($very-light-green);
   .offer__textbox {
     padding: 1rem 0;
     color: $dark-blue;
@@ -27,10 +9,15 @@
     .offer--text {
       line-height: 1.5rem;
       padding-bottom: 1rem;
-      span{
-         font-weight: bold;
+      span {
+        font-weight: bold;
       }
     }
   }
+}
+
+@media (min-width: 1000px) {
+  .offer__wrapper {
+    display: none;
   }
 }
