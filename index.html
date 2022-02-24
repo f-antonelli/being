@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Being</title>
   </head>
   <body>
@@ -57,9 +59,9 @@
       </div>
     </section>
 
-    <!--Main section | Mobile-->
+    <!--Main section | Desktop-->
     <section class="wrapper__herodesktop">
-      <div class="container-herobox">
+      <div class="container-herobox" data-aos="fade-in" data-aos-duration="1500">
         <div class="main-content">
           <h1>ALCANZA EL ÉXITO</h1>
           <p>
@@ -112,7 +114,7 @@
 
     <!--Identity section | Desktop -->
     <section class="wrapper-identity-desktop">
-      <div class="container-wearebeing">
+      <div class="container-wearebeing" data-aos="fade-right">
         <div class="identity__imgbox">
           <img
             class="identity--img"
@@ -132,7 +134,7 @@
         </div>
       </div>
 
-      <div class="container-ourplatform">
+      <div class="container-ourplatform" data-aos="fade-right">
         <div class="identity__imgbox">
           <img
             class="identity--img"
@@ -175,12 +177,12 @@
     </div>
 
     <!--Mockup-->
-    <section class="mockup__wrapperdesktop">
-      <h3 class="mockup--text">
+    <section class="mockup__wrapperdesktop" >
+      <h3 class="mockup--text" data-aos="fade-right" data-aos-delay="50">
         Unite a nuestra comunidad y conoce <span>todos los recursos</span> que
         brindamos.
       </h3>
-      <div class="container-mockup">
+      <div class="container-mockup" data-aos="fade-left" data-aos-delay="200">
         <img src="./assets/images/mockup.png" alt="mockup" />
       </div>
     </section>
@@ -207,7 +209,7 @@
       </div>
       <div class="card__wrapper">
         <!--Card 1-->
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <div class="container--imgcard">
             <img class="card--teacher" src="./assets/heart.png" alt="teacher" />
             <img
@@ -223,7 +225,7 @@
           </div>
         </div>
         <!--Card 2-->
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
           <div class="container--imgcard">
             <img class="card--teacher" src="./assets/heart.png" alt="teacher" />
             <img
@@ -239,7 +241,7 @@
           </div>
         </div>
         <!--Card 3-->
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
           <div class="container--imgcard">
             <img class="card--teacher" src="./assets/heart.png" alt="teacher" />
             <img
@@ -255,7 +257,7 @@
           </div>
         </div>
         <!--Card 4-->
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
           <div class="container--imgcard">
             <img class="card--teacher" src="./assets/heart.png" alt="teacher" />
             <img
@@ -272,9 +274,10 @@
         </div>
       </div>
     </section>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper and AOS-->
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "flip",
@@ -283,6 +286,7 @@
           el: ".swiper-pagination",
         },
       });
+      AOS.init();
     </script>
   </body>
 </html>
