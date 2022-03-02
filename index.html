@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Being</title>
   </head>
+
   <body>
     <!--Navbar | Mobile -->
     <nav class="wrapper-navmobile">
@@ -22,10 +23,23 @@
       </a>
       <div class="nav__menu">
         <img
+          id="hamburger"
           class="nav__menu--img"
           src="./assets/menu.png"
           alt="hamburguer-menu"
         />
+        <div class="nav-mobile" id="navMobile">
+          <img id="exit" src="./assets/exit.png" alt="exit" />
+          <ul class="ul-mobile">
+            <li><a href="#" class="text-register">REGISTRATE</a></li>
+            <li class="text-sesion"><a href="#">Inicia sesión</a></li>
+            <li><a href="#identity">Quiénes somos</a></li>
+            <li><a href="#offer">Qué ofrecemos</a></li>
+            <li><a href="#community">Comunidad</a></li>
+            <li><a href="#">Casos de éxito</a></li>
+            <li class="text-contact"><a href="">Contactanos</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -36,11 +50,11 @@
       </a>
       <div class="nav__menu">
         <ul class="nav__ul">
-          <li><a href="./pages/identidad.html">Identidad</a></li>
-          <li><a href="./pages/comunidad.html" class="a--offer">Oferta</a></li>
-          <li><a href="./pages/comunidad.html">Comunidad</a></li>
-          <li><a href="./pages/plataforma.html">Plataforma</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="#identityDesk">Identidad</a></li>
+          <li><a href="#offer" class="a--offer">Oferta</a></li>
+          <li><a href="#community">Comunidad</a></li>
+          <li><a href="#">Plataforma</a></li>
+          <li><a href="#">Contacto</a></li>
           <li>
             <a href="./pages/iniciate.html" class="a--getstarted">Iniciate</a>
           </li>
@@ -61,7 +75,11 @@
 
     <!--Main section | Desktop-->
     <section class="wrapper__herodesktop">
-      <div class="container-herobox" data-aos="fade-in" data-aos-duration="1500">
+      <div
+        class="container-herobox"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+      >
         <div class="main-content">
           <h1>ALCANZA EL ÉXITO</h1>
           <p>
@@ -91,7 +109,7 @@
     </section>
 
     <!--Identity section | Mobile -->
-    <section class="identity__wrapper">
+    <section class="identity__wrapper" id="identity">
       <div class="identity__textbox">
         <h2 class="identity--title">Identidad</h2>
         <p class="identity--text">
@@ -113,7 +131,7 @@
     </section>
 
     <!--Identity section | Desktop -->
-    <section class="wrapper-identity-desktop">
+    <section class="wrapper-identity-desktop" id="identityDesk"]>
       <div class="container-wearebeing" data-aos="fade-right">
         <div class="identity__imgbox">
           <img
@@ -156,7 +174,7 @@
     </section>
 
     <!--Offer section-->
-    <div class="new--box">
+    <div class="new--box" id="offer">
       <section class="offer__wrapper">
         <div class="offer__textbox">
           <h2 class="offer--title">Oferta - La plataforma</h2>
@@ -177,7 +195,7 @@
     </div>
 
     <!--Mockup-->
-    <section class="mockup__wrapperdesktop" >
+    <section class="mockup__wrapperdesktop">
       <h3 class="mockup--text" data-aos="fade-right" data-aos-delay="50">
         Unite a nuestra comunidad y conoce <span>todos los recursos</span> que
         brindamos.
@@ -188,7 +206,7 @@
     </section>
 
     <!--Community-->
-    <section class="community__wrapper">
+    <section class="community__wrapper" id="community">
       <div class="community__textbox">
         <h3 class="community--title mobile">Comunidad</h3>
         <p class="community--text mobile">
@@ -277,6 +295,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
     <!-- Initialize Swiper and AOS-->
     <script>
       var swiper = new Swiper(".mySwiper", {

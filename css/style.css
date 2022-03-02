@@ -134,10 +134,13 @@
             border: none; } }
 
 .wrapper-navmobile {
+  z-index: 10000000;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3.5rem;
+  width: 100%;
   background-color: #EFF0E1;
   padding: 0 3rem; }
   .wrapper-navmobile .nav__logo {
@@ -146,6 +149,45 @@
     height: auto; }
   .wrapper-navmobile .nav__menu .nav__menu--img {
     cursor: pointer; }
+  .wrapper-navmobile .nav-mobile {
+    z-index: 100000000;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 90%;
+    height: 100vh;
+    background-color: #325D79;
+    border-top-left-radius: 2rem;
+    padding: 8rem 5rem;
+    transition: 1s; }
+    .wrapper-navmobile .nav-mobile img {
+      cursor: pointer;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 20px;
+      height: 20px; }
+    .wrapper-navmobile .nav-mobile .ul-mobile {
+      font-size: 2rem; }
+      .wrapper-navmobile .nav-mobile .ul-mobile .text-register {
+        font-weight: 600;
+        color: #BAEDD4; }
+      .wrapper-navmobile .nav-mobile .ul-mobile .text-sesion {
+        margin-bottom: 5rem;
+        font-weight: 500; }
+      .wrapper-navmobile .nav-mobile .ul-mobile .text-contact {
+        margin-top: 5rem;
+        font-weight: 500; }
+      .wrapper-navmobile .nav-mobile .ul-mobile li {
+        cursor: pointer;
+        list-style: none;
+        margin: 2rem 0;
+        font-weight: 400; }
+        .wrapper-navmobile .nav-mobile .ul-mobile li a {
+          text-decoration: none;
+          color: #ffffff; }
+  .wrapper-navmobile .nav-mobile.active {
+    right: 0; }
 
 .wrapper-navdesktop {
   display: none; }
@@ -415,4 +457,5 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth; }
