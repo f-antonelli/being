@@ -345,7 +345,8 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  width: 80%; }
+  width: 80%;
+  overflow-x: hidden; }
   .mockup__wrapperdesktop .mockup--text {
     flex: 1;
     text-align: end;
