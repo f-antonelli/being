@@ -7,6 +7,22 @@
   border-radius: 1.2rem 1.2rem 1.2rem 0;
 }
 
+@mixin boxSections__contact($color) {
+  display: flex;
+  flex-direction: column;
+  background-color: $color;
+  padding: 2.3rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 0;
+}
+
+@mixin boxSections__contact--desktop($color) {
+  display: flex;
+  flex-direction: column;
+  background-color: $color;
+  padding: 2.3rem 0 4.5rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 0;
+}
+
 @mixin boxSectionsDesktop($color) {
   display: flex;
   justify-content: space-between;

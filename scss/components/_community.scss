@@ -99,3 +99,17 @@
     }
   }
 }
+
+.community__text2 {
+  p {
+    text-align: end;
+    color: $dark-blue;
+    padding-right: 2rem;
+    span {
+      background-color: $very-light-blue;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+  }
+  
+}

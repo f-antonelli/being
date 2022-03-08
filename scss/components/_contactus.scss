@@ -1,0 +1,130 @@
+.contact--us__wrapper {
+    .contact--us__mobile {
+        @media (min-width: 1000px) {
+            display: none;
+        }
+        @media (max-width: 999px) {
+            @include boxSections__contact($very-light-blue);
+            justify-content: center;
+            .contact--us__textbox {
+            color: $dark-blue;
+            .contact--us--title {
+                padding-bottom: 1rem;
+            }
+            .contact--us--text {
+                a {
+                    color: $dark-blue;
+                    text-decoration: none;
+                }
+                line-height: 1.5rem;
+                padding-bottom: 0.2rem;
+            }
+            .contact--us--sign--up {
+                a{
+                    color: $dark-green;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+                padding-top: 2.5rem;
+                padding-bottom: 0.3rem;
+            }
+            .contact--us--log--in {
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $dark-blue;
+                }
+                padding-bottom: 2.5rem;
+            }
+            p {
+                a {
+                    text-decoration: none;
+                    color: $dark-blue
+                }
+            }
+            }
+            .contact--us__imgbox {
+                padding: 1.5rem 0 1.5rem 0;
+                img {
+                    width: 12.5rem;
+                    height: 2.5rem;
+                }
+            }
+            .contact--us__copyright {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+    .contact--us__desktop {
+        @media (max-width: 999px) {
+            display: none;
+        }
+        @media (min-width: 1000px) {
+            @include boxSections__contact--desktop($very-light-blue);
+            justify-content: center;
+            .contact--us-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 4rem 0 4rem;
+            }
+            .contact--us__textbox {
+            color: $dark-blue;
+            .contact--us--title {
+                padding-bottom: 1rem;
+            }
+            .contact--us--text {
+                a {
+                    color: $dark-blue;
+                    text-decoration: none;
+                }
+                line-height: 1.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .contact--us--sign--up {
+                a{
+                    color: $dark-green;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+                padding-bottom: 0.5rem;
+            }
+            .contact--us--log--in {
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $dark-blue;
+                }
+                padding-bottom: 0.5rem;
+            }
+            p {
+                a {
+                    text-decoration: none;
+                    color: $dark-blue
+                }
+            }
+            }
+            .contact--us__imgbox {
+                padding: 1.5rem 0 1.5rem 0;
+                img {
+                    width: 12.5rem;
+                    height: 2.5rem;
+                    transform: translateY(9.7rem);
+                }
+            }
+            .contact--us__copyright {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    color: $dark-blue;
+                    transform: translateY(3.2rem);
+                }
+            }
+        }
+    }
+}
