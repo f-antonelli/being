@@ -13,6 +13,7 @@
   background-color: $color;
   padding: 2.3rem;
   border-radius: 1.2rem 1.2rem 1.2rem 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 @mixin boxSections__contact--desktop($color) {
@@ -21,6 +22,7 @@
   background-color: $color;
   padding: 2.3rem 0 4.5rem;
   border-radius: 1.2rem 1.2rem 1.2rem 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 @mixin boxSectionsDesktop($color) {
@@ -30,4 +32,5 @@
   margin: 2rem 4rem;
   padding: 1.3rem;
   border-radius: 1.2rem 1.2rem 1.2rem 0;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
 }

@@ -64,7 +64,14 @@
 
     <!--Main section | Mobile-->
     <section class="wrapper__heromobile">
-      <div class="hero__img"></div>
+      <div class="swiper-mobile swiper mySwiperMobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assets/images/learning3.jpg" alt="carousel-mobile1"></div>
+          <div class="swiper-slide"><img src="./assets/images/learning4.jpg" alt="carousel-mobile2"></div>
+          <div class="swiper-slide"><img src="./assets/images/learning5.jpg" alt="carousel-mobile3"></div>
+        </div>
+        <div class="swiper-pagination-mobile"></div>
+      </div>
       <div class="hero__content">
         <p class="hero__text">
           Aprendé idiomas de maneras realistas y se tú mejor versión.
@@ -291,11 +298,12 @@
           </div>
         </div>
       </div>
-      <div class="community__text2">
-        <p>Conoce to<span>das las opciones      </span></p>
-        <div class="community__textbox2"></div>
-      </div>
     </section>
+
+    <!--Text span-->
+    <div class="community__text2">
+      <p>Conoce to<span>das las opciones</span></p>
+    </div>
 
     <!--Join us section -->
     <section class="join--us__wrapper" id="join--us">
@@ -337,12 +345,7 @@
         </div>
     </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./app.js"></script>
-
     <!--Contact us section | Mobile-->
-
     <section class="contact--us__wrapper" id="contact--us">
       <div class="contact--us__mobile">
         <div class="contact--us__textbox">
@@ -390,6 +393,10 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
     <!-- Initialize Swiper and AOS-->
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -397,6 +404,11 @@
         grabCursor: true,
         pagination: {
           el: ".swiper-pagination",
+        },
+      });
+      var swiperMobile = new Swiper(".mySwiperMobile", {
+        pagination: {
+          el: ".swiper-pagination-mobile",
         },
       });
       AOS.init();
