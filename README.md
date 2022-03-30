@@ -1,11 +1,31 @@
-<h1 align="center">BEING PROJECT</h1>
-<h3 align="center">description</h3>
+# BEING - REAL PROJECT CODERHOUSE (Web Development)
 
-<h3 align="left">Connect with us:</h3>
-<p align="left">
-<a href="#" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="being" height="30" width="40" /></a>
-</p>
+Static page created for Being, a startup that offers online English courses for Latin America
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
 
+## Demo
+
+![alt-text](https://user-images.githubusercontent.com/77996387/160897781-e6681afb-7e99-4f29-8e7f-41bdb2a9fcec.gif)
+
+
+## 🛠 Skills
+
+- HTML
+- SASS
+- Javascript
+- GIT - Github
+- Swiper.js
+- AOS (animations)
+- Vercel
+
+## Authors
+
+- [@camilobasualdo](https://github.com/camilobasualdo)
+- [@f-antonelli](https://github.com/f-antonelli)
+
+
+## Used By
+
+This project is used by the following companies:
+
+- BEING
